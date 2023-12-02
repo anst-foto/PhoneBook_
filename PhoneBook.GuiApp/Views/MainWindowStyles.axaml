@@ -1,0 +1,40 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="Label.label">
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Padding" Value="3"/>
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+    
+    <Style Selector="TextBox.input">
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+    <Style Selector="TextBox.input_id">
+        <Setter Property="Width" Value="50"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="IsEnabled" Value="False"/>
+    </Style>
+    
+    <Style Selector="Button.button_default">
+        <Setter Property="Width" Value="125"/>
+        <Setter Property="Padding" Value="3"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+    <Style Selector="Button.button_new">
+        <Setter Property="Background" Value="DarkGreen"/>
+    </Style>
+    <Style Selector="Button.button_save">
+        <Setter Property="Background" Value="DarkBlue"/>
+    </Style>
+    <Style Selector="Button.button_delete">
+        <Setter Property="Background" Value="DarkRed"/>
+    </Style>
+    <Style Selector="Button.button_clear">
+        <Setter Property="Background" Value="DarkOrange"/>
+    </Style>
+</Styles>

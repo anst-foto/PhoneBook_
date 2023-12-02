@@ -14,7 +14,67 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
+    
+    <Window.Styles>
+        <StyleInclude Source="MainWindowStyles.axaml"/>
+    </Window.Styles>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid ColumnDefinitions="*, 2*">
+        <ListBox Grid.Column="0"
+                 ItemsSource="{Binding Collection}"
+                 SelectedItem="{Binding SelectedItem}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+        <StackPanel Grid.Column="1">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="ID"
+                           Target="{Binding ElementName=InputId}"
+                           Classes="label"/>
+                    <TextBox x:Name="InputId"
+                             Text="{Binding Id}"
+                             Classes="input_id"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Имя"
+                           Target="{Binding ElementName=InputId}"
+                           Classes="label"/>
+                    <TextBox x:Name="InputName"
+                             Text="{Binding Name}"
+                             Classes="default input"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Телефон"
+                           Target="{Binding ElementName=InputId}"
+                           Classes="label"/>
+                    <TextBox x:Name="InputPhone"
+                             Text="{Binding Phone}"
+                             Classes="input"/>
+                </StackPanel>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Новая запись"
+                        Command="{Binding NewCommand}"
+                        Classes="button_default button_new"/>
+                <Button Content="Сохранить"
+                        Command="{Binding SaveCommand}"
+                        Classes="button_default button_save"/>
+                <Button Content="Удалить"
+                        Command="{Binding DeleteCommand}"
+                        Classes="button_default button_delete"/>
+                <Button Content="Очистить"
+                        Command="{Binding ClearCommand}"
+                        Classes="button_default button_clear"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 
 </Window>

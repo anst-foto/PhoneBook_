@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBook.GuiApp", "PhoneBook.GuiApp\PhoneBook.GuiApp.csproj", "{DD40CF0C-A2D9-4BDC-9D54-431AED9EE5B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBook.DAL", "PhoneBook.DAL\PhoneBook.DAL.csproj", "{708D34F9-14B4-4F19-8F0A-32E0B358A11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBook.BL", "PhoneBook.BL\PhoneBook.BL.csproj", "{6F21B1EA-CB30-4BE5-890F-E3D9D2A9E166}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{DD40CF0C-A2D9-4BDC-9D54-431AED9EE5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD40CF0C-A2D9-4BDC-9D54-431AED9EE5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD40CF0C-A2D9-4BDC-9D54-431AED9EE5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708D34F9-14B4-4F19-8F0A-32E0B358A11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708D34F9-14B4-4F19-8F0A-32E0B358A11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708D34F9-14B4-4F19-8F0A-32E0B358A11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708D34F9-14B4-4F19-8F0A-32E0B358A11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F21B1EA-CB30-4BE5-890F-E3D9D2A9E166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F21B1EA-CB30-4BE5-890F-E3D9D2A9E166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F21B1EA-CB30-4BE5-890F-E3D9D2A9E166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F21B1EA-CB30-4BE5-890F-E3D9D2A9E166}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
